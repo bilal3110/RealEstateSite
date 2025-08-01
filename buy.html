@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Seaweed+Script&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesom -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Real Estate Site</title>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div>30% Down Payment <span class="hidden-sm">| The Best Location in Faisalabad</span></div>
+        <div class="top-bar-contact">
+            <span>Book Now</span>
+            <a href="tel:0304111250">0304 111 1250</a>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M3 12l2-2 4 4 8-8 3 3"></path>
+                </svg>
+                <span>Faisalabad Properties</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">Rent</a></li>
+                    <li><a href="#" class="nav-link">Buy</a></li>
+                    <li><a href="#" class="nav-link">Services</a></li>
+                    <li><a href="#" class="nav-link">Our Team</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Responsive Menu -->
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Responsive Menu -->
+    <div class="responsive-menu" id="responsiveMenu">
+        <div class="responsive-menu-content">
+            <div class="r-head">
+                <div class="logo" style="color: #ffff;">
+                    <span>Menu</span>
+                </div>
+                <span class="close" id="closeMenu">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            </div>
+            <nav class="r-nav">
+                <ul class="r-nav-menu">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Rent</a></li>
+                    <li><a href="#" class="nav-link">Buy</a></li>
+                    <li><a href="#" class="nav-link">Services</a></li>
+                    <li><a href="#" class="nav-link">Our Team</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <main style="min-height: 70vh;">
+        <section class="hero">
+            <h1>Find Buy Properties</h1>
+            <div class="hero-card" style="width: 80%;">
+                <div class="container card shadow py-3">
+                    <div class="row">
+                        <h4>Search Properties</h4>
+                    </div>
+                    <div class="col">
+                        <h6>City</h6>
+                        <select class="form-select form-select-sm" name="" id="">
+                            <option value="">Faisalabad</option>
+                            <option value="2">Lahore</option>
+                            <option value="3">Rawalpindi</option>
+                            <option value="4">Islamabad</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <h6>Area</h6>
+                        <select class="form-select form-select-sm" name="" id="">
+                            <option value="">Gulshan e Hayat</option>
+                            <option value="2">D Ground</option>
+                            <option value="3">Canal Road</option>
+                            <option value="4">Jhang Road</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <h6>Size</h6>
+                        <select class="form-select form-select-sm" name="" id="">
+                            <option value="1">3 Marla</option>
+                            <option value="2">5 Marla</option>
+                            <option value="3">7 Marla</option>
+                            <option value="4">10 Marla</option>
+                        </select>
+                    </div>
+                    <div class="col hero-btn my-2">
+                        <a href="">Submit</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- Feature Buy Properties -->
+    <section class="feature">
+        <h2>Buy Properties</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="c-img">
+                    <img src="images/Facebook.jpeg" alt="" />
+                </div>
+                <div class="c-text">
+                    <h5>PKR 100,000,00</h5>
+                    <p>Gulshan e Hayat, Faisalabad</p>
+                    <p><i class="fa-regular fa-house"></i>House,Residential</p>
+                    <p><i class="fa-solid fa-expand"></i>Size</p>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="c-img">
+                    <img src="images/Facebook.jpeg" alt="" />
+                </div>
+                <div class="c-text">
+                    <h5>PKR 100,000,00</h5>
+                    <p>Gulshan e Hayat, Faisalabad</p>
+                    <p><i class="fa-regular fa-house"></i>House,Residential</p>
+                    <p><i class="fa-solid fa-expand"></i>Size</p>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="c-img">
+                    <img src="images/Facebook.jpeg" alt="" />
+                </div>
+                <div class="c-text">
+                    <h5>PKR 100,000,00</h5>
+                    <p>Gulshan e Hayat, Faisalabad</p>
+                    <p><i class="fa-regular fa-house"></i>House,Residential</p>
+                    <p><i class="fa-solid fa-expand"></i>Size</p>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pagination -->
+    <section>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!-- Contact  -->
+    <section class="contact-section">
+        <div class="contact-form">
+            <form action="">
+                <div class="mb-3">
+                    <label for="" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Phone</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Message</label>
+                    <textarea class="form-control" name="" id="" rows="3"></textarea>
+                </div>
+                <div class="mb-3 hero-btn">
+                    <a href="">Submit</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Our Team Section -->
+    <section class="container section">
+        <h2 class="section-title-left">Our Team</h2>
+        <div class="teams grid grid-1 grid-sm-4">
+            <div class="team-card">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a012d48d-83cb-4185-8c03-f2d1c2703987.png"
+                    alt="Team member Zain Ahmed wearing a navy suit and smiling" class="team-image"
+                    onerror="this.onerror=null;this.src='https://placehold.co/120x120/png?text=No+Image';" />
+                <h3 class="team-name">Zain Ahmed</h3>
+                <p class="team-contact">Phone: +92 300 1234567</p>
+                <p class="team-contact mb-4">Email: zain@example.com</p>
+                <button class="btn-blue team-btn">Contact</button>
+            </div>
+            <div class="team-card">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cee0d0e9-b51d-4fa3-aca4-4f75e895044c.png"
+                    alt="Team member Nida Riaz wearing a grey blazer and smiling" class="team-image"
+                    onerror="this.onerror=null;this.src='https://placehold.co/120x120/png?text=No+Image';" />
+                <h3 class="team-name">Nida Riaz</h3>
+                <p class="team-contact">Phone: +92 300 7654321</p>
+                <p class="team-contact mb-4">Email: nida@example.com</p>
+                <button class="btn-blue team-btn">Contact</button>
+            </div>
+            <div class="team-card">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0f0afd21-f9f6-4866-ab63-d4a380b91919.png"
+                    alt="Team member Rana Shah wearing a business casual shirt and smiling" class="team-image"
+                    onerror="this.onerror=null;this.src='https://placehold.co/120x120/png?text=No+Image';" />
+                <h3 class="team-name">Rana Shah</h3>
+                <p class="team-contact">Phone: +92 300 9876543</p>
+                <p class="team-contact mb-4">Email: rana@example.com</p>
+                <button class="btn-blue team-btn">Contact</button>
+            </div>
+            <div class="team-card">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/939cb711-7c53-4582-a485-352663c57feb.png"
+                    alt="Team member Samar Gilani wearing a shirt and smile" class="team-image"
+                    onerror="this.onerror=null;this.src='https://placehold.co/120x120/png?text=No+Image';" />
+                <h3 class="team-name">Samar Gilani</h3>
+                <p class="team-contact">Phone: +92 300 6789123</p>
+                <p class="team-contact mb-4">Email: samar@example.com</p>
+                <button class="btn-blue team-btn">Contact</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-contact">
+                <p>96 Main GT Rd, Faisalabad, Punjab, Pakistan</p>
+                <p>Phone: 0304-1111250</p>
+                <p>Email: <a href="mailto:info@faisalabadproperties.com">info@faisalabadproperties.com</a></p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Gallery</a>
+            </div>
+            <div>© 2025 Faisalabad Properties. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</html>
